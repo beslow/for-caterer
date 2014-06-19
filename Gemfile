@@ -13,6 +13,9 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'pundit'
+gem 'will_paginate', '3.0.4'
+gem 'bootstrap-will_paginate', '0.0.9'
+gem 'paperclip', '~> 4.1.1'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -20,6 +23,9 @@ group :development do
   gem 'rails_layout'
 end
 group :development, :test do
+  gem 'pry', '~> 0.9.12.6'
+  gem 'pry-rails', '~> 0.3.2'
+  gem 'pry-nav', '~> 0.2.3'
   gem 'factory_girl_rails'
   gem 'rspec-rails', '>= 3.0.0.beta2'
 end

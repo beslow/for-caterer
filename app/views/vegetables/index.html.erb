@@ -1,2 +1,11 @@
-<h1>Vegetables#index</h1>
-<p>Find me in app/views/vegetables/index.html.erb</p>
+<%= will_paginate %>
+<ul>
+  <% @vegetables.each do |vegetable| %>
+    <li>
+      <%= link_to vegetable.ch_name %>
+    </li>
+  <% end %>
+</ul>
+<%= will_paginate %>
+
+
